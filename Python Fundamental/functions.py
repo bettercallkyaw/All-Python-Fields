@@ -6,7 +6,6 @@ def sayHello(name):
 
 sayHello('Angela')
 
-
 # Return values
 def getTotal(num1,num2):
     total=num1+num2
@@ -19,9 +18,7 @@ print(getTotal(4,4))
 
 def getValue(num3,num4):
     return num3+num4
-
-print(getValue(3,3))
+print(getValue(5,5))    
 
 getResult=lambda num5,num6:num5+num6
-
-print(getResult(2,2))
+print(getResult(6,6))

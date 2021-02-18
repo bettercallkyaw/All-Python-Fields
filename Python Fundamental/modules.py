@@ -1,18 +1,17 @@
 # Core Modules
-from datetime import date 
 import datetime
+from datetime import date 
 
-today=datetime.date.today()
-#today=date.today()
+today=date.today()
+#today=datetime.date.today()
 print(today)
 
-
-import time 
+import time
 from time import time 
 
-timestamp=time()
-#timestamp=time.time()
-print(timestamp)
+timestamps=time()
+#timestamps=time.time()
+print(timestamps)
 # ------------------------
 # -----------------------
 ##pip module
@@ -20,7 +19,7 @@ from camelcase import CamelCase
 
 c=CamelCase()
 print(c.hump('hello world'))
-# ------------------------
+
 # -----------------------
 ##file module
 import validator
@@ -34,22 +33,22 @@ else:
     print('email is bad')    
 
 #############################################################
-from random import randint
-x=randint(-100,100)
-while x ==0: #  make sure x is not zero
-    x=randint(-100,100)
-y=randint(-100,100)
-while y==0: # make sure y is not zero
-    y=randint(-100,100)
+# from random import randint
+# x=randint(-100,100)
+# while x ==0: #  make sure x is not zero
+#     x=randint(-100,100)
+# y=randint(-100,100)
+# while y==0: # make sure y is not zero
+#     y=randint(-100,100)
 
-if x>0 and y>0:
-    print('both positive')
-elif x<0 and y<0:
-    print('both negative')
-elif x>0 and y<0:
-    print("x is positive and y is negative")
-else:
-    print('y is positive and y is negative')
+# if x>0 and y>0:
+#     print('both positive')
+# elif x<0 and y<0:
+#     print('both negative')
+# elif x>0 and y<0:
+#     print("x is positive and y is negative")
+# else:
+#     print('y is positive and y is negative')
 
 ###########################################################  
 from random import choice,randint

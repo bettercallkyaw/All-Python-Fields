@@ -3,20 +3,19 @@
 # Open a file
 myFile=open('index.txt','w')
 
-
 #Get some info
 print('Name ',myFile.name)
-print('is closed ',myFile.closed)
+print('Is closed ',myFile.closed)
 print('mode ',myFile.mode)
 
 # Write to file
-myFile.write('Hello ')
-myFile.write('World')
+myFile.write('Hello I love')
+myFile.write(' programming')
 myFile.close()
 
 # Append to file
 myFile=open('index.txt','a')
-myFile.write('.Goodbye World')
+myFile.write(' and computer hacking')
 myFile.close()
 
 # Read to file

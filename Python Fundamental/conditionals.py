@@ -21,38 +21,38 @@ if x>y:
 elif (x==y):
     print(f'{x} values is equal to {y} values')    
 else:
-    print(f'{y} values is greater than {x} values')                 
+    print(f'{y} values is greater than {x} values')                
 
 # Nested if
 if x>5:
-    if x<=20:
+   if x<=20:
         print(f'{x} values is greater than 5 and less than or equal to 20')
 
 # Logical operators (and, or, not) - Used to combine conditional statements
 
 # and
 if x>5 and x<=20:
-     print(f'{x} values is greater than 5 and less than or equal to 20')
+  print(f'{x} values is greater than 5 and less than or equal to 20')
 
 # or
 if x>5 or x<=20:
-     print(f'{x} values is greater than 5 and less than or equal to 20')
+  print(f'{x} values is greater than 5 and less than or equal to 20')
 
 # if not
 if not (x==y):
-    print(f'{x} value is not equal to {y} value')
+    print(f'{x} values is not equal to {y} values')
 
 # Membership Operators (in, not in) - Membership operators are used to test if a sequence is presented in an object
 
-numbers=[1,2,3,4,5,6,7,20]
+members=[1,2,3,4,5,6,7,20]
 
 # in
-if x in numbers:
-    print(x in numbers)
+if x in members:
+    print(x in members)
 
 # not in
-if y not in numbers:
-    print(y not in numbers)
+if y not in members:
+    print(y not in members)
 
 # Identity Operators (is, is not) - Compare the objects, not if they are equal, but if they are actually the same object, with the same memory location:
 

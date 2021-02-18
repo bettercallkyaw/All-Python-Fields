@@ -12,19 +12,19 @@ print(type(fruits2),fruits2)
 print(fruits[0])
 
 # Append to list
-fruits.append('bluebarry')
+fruits.append('redbarry')
 print(fruits)
 
 # Remove from list
-fruits.remove('bluebarry')
+fruits.remove('redbarry')
 print(fruits)
 
 # Insert into a position
-fruits[1]='redbarry'
+fruits[0]='mango'
 print(fruits)
 
 # Change Value
-fruits[1]='orange'
+fruits[0]='apple'
 print(fruits)
 
 # Remove with pop
@@ -40,5 +40,5 @@ fruits.sort()
 print(fruits)
 
 # Reverse sort
-fruits.sort(reverse=True)
+fruits.sort(reverse=False)
 print(fruits)

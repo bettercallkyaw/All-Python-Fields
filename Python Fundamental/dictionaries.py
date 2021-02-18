@@ -2,8 +2,8 @@
 
 # Create dict
 person={
-    'fullName':'john doe',
-    'email':'johndoe@gmail.com',
+    'fullName':'Robet Peter',
+    'email':'robet@gmail.com',
     'age':22,
     'city':'Boston'
 }
@@ -11,16 +11,16 @@ person={
 print(type(person),person)
 
 # Use constructor
-person2=dict(fullName='robet peter',email='robet@gmail.com',age=33,city='San Fransecio')
+person2=dict(fullName='John Smith',email='john@gmail.com',age=33,city='New York')
 print(type(person2),person2)
 
 # Get value
 print(person['fullName'])
-print(person2.get('email'))
-print(person2['city'])
+print(person2.get('fullName'))
+print(person2['email'])
 
 # Add key/value
-person['phone']=934567898
+person['phone']=999234567
 print(person)
 
 # Get dict keys
@@ -31,7 +31,7 @@ print(person.items())
 
 # Copy dict
 person2=person.copy()
-person2['city']='yangon'
+person2['city']='Yangon'
 print(person2)
 
 # Remove item
@@ -39,7 +39,7 @@ del(person['phone'])
 print(person)
 
 #Remove with pop
-person.pop('age')
+person.pop('fullName')
 print(person)
 
 # Clear
@@ -52,19 +52,18 @@ print(len(person2))
 # List of dict
 people=[
     {
-        'name':'william smith',
+        'name':'William Smith',
         'email':'william@gmail.com',
-        'age':22,
-        'city':'london'
+        'city':'London',
+        'age':22
     },
     {
-        'name':'bob nathan',
+        'name':'Bob Kate',
         'email':'bob@gmail.com',
-        'age':44,
-        'city':'berlin'
+        'city':'Berlin',
+        'age':25
     }
 ]
 
-print(type(people))
-print(people)
-print(people[0]['email'])
+print(type(people),people)
+print(people[0]['name'])

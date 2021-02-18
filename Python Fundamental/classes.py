@@ -5,28 +5,28 @@ class User:
     # Constructor
       def __init__(self,name,email,age):
           self.name=name
-          self.email=email 
-          self.age=age 
-    
+          self.email=email
+          self.age=age
+
       def greeting(self):
-          return f'Hello My name is {self.name} and I am {self.age} year old'
+          return f'Hello My name is {self.name}.I am {self.age} year old.'     
       
       def has_birthday(self):
           self.age+=1
 #Extend Class
-class Customer(User):    
+class Customer(User):   
     # Constructor
-    def __init__(self,name,email,age):
-        self.name=name
-        self.email=email 
-        self.age=age
-        self.balance=0
+       def __init__(self,name,email,age):
+           self.name=name
+           self.email=email
+           self.age=age
+           self.balance=0
 
-    def has_balance(self,balance):
-        self.balance=balance    
+       def set_balance(self,balance):
+            self.balance=balance 
 
-    def greeting(self):
-        return f'Hello My name is {self.name} and I am {self.age} year old.My balance is {self.balance}'    
+       def greeting(self):
+          return f'Hello My name is {self.name}.I am {self.age} year old.My balance is {self.balance}'       
       
 
 # init user object
@@ -37,6 +37,6 @@ john.has_birthday()
 print(john.greeting())
 
 # init customer object
-robet=Customer('robet peter','robet@gmail.com',30)
-robet.has_balance(200)
+robet=Customer('robet','robet@gmail.com','33')
+robet.set_balance(900)
 print(robet.greeting())
