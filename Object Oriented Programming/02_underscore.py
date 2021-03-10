@@ -9,15 +9,14 @@ class Person:
         # single underscore means "private" (sort of)
         self._secret="hi"
          # two leading underscores tells Python to "mangle" the name
-        self.__msg="I like noddle"
-        self.__lol="HaHaHa"
+        self.__msg="I Likde Noddle"
+        self.__lol="Ha Ha Ha"
 
 
 person=Person()
 print(person.name)
-
 print(person._secret) #Anyone can still directly access the attribute
-#print(dir(person))  # Notice what __msg and __lol have been "mangled" to
+print(dir(person))  # Notice what __msg and __lol have been "mangled" to
 
 print(person._Person__msg)
 print(person._Person__lol)
