@@ -2,49 +2,49 @@
 
 x=20
 y=10
-
 # Comparison Operators (==, !=, >, <, >=, <=) - Used to compare values
 
 # Simple if
-if x>y:
-    print(f"{x} value is greater than {y} value.")
+if(x>y):
+    print(f'{x} value is greater than {y} value.')
 
 # if/Esle 
 if(x>y):
-    print(f"{x} value is greater than {y} value.")
+    print(f'{x} value is greater than {y} value.')
 else:
-    print(f"{y} value is greater than {x} value.")        
+    print(f'{y} value is greater than {x} value.')           
 
 # elif
-if x>y:
-    print(f"{x} value is greater than {y} value.")
+if(x>y):
+    print(f'{x} value is greater than {y} value.')   
 elif (x==y):
-    print(f"{x} value is equal to {y} value.")
+    print(f'{x} value is equal to {y} value.')
 else:
-    print(f"{y} value is greater than {x} value.")                      
+    print(f'{y} value is greater than {x} value.')                         
 
 # Nested if
 if x>5:
     if x<=20:
-        print(f"x value is greater than 5 and less than or equal to 20.")
+        print(f'x value is greater than 5 value and less than or equal to 20 value.')
+
 
 # Logical operators (and, or, not) - Used to combine conditional statements
 
 # and
 if x>5 and x<=20:
-    print(f"x value is greater than 5 and less than or equal to 20.")
+    print(f'x value is greater than 5 value and less than or equal to 20 value.')
 
 # or
 if x>5 or x<=20:
-    print(f"x value is greater than 5 and less than or equal to 20.")
+    print(f'x value is greater than 5 value and less than or equal to 20 value.')
 
 # if not
 if not (x==y):
-    print(f"{x} value is not equal to {y} value.")
+    print(f'{x} value is not equal to {y} value.')
 
 # Membership Operators (in, not in) - Membership operators are used to test if a sequence is presented in an object
 
-numbers=[1,2,3,4,5,6,20]
+numbers=[1,2,3,4,5,20]
 
 # in
 if x in numbers:

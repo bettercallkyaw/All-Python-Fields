@@ -1,50 +1,50 @@
 # A Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
 
 # Create tuple
-fruits=("apple","orange","banana")
-print(type(fruits),fruits)
-
-# Using a constructor
-fruits1=tuple(("apple","orange","banana"))
+fruits1=('apple','banana','orange')
 print(type(fruits1),fruits1)
 
-# Single value needs trailing comma
-fruits2=("apple",)
+# Using a constructor
+fruits2=tuple(('apple','banana','orange'))
 print(type(fruits2),fruits2)
 
+# Single value needs trailing comma
+fruits3=('apple',)
+print(type(fruits3),fruits3)
+
 # Get value
-print(fruits[0])
+print(fruits1[1])
 
 # Can't change value
-# fruits[0]="redbarry"
-# print(fruits)
+# fruits1[0]='mango'
+# print(fruits1)
 
 # Delete tuple
-# del fruits
-# print(fruits)
+# del fruits1
+# print(fruits1)
 
 # Get length
-print(len(fruits))
+print(len(fruits1))
 
 # A Set is a collection which is unordered and unindexed. No duplicate members.
 
 # Create set
-fruits_set={"apple","orange","banana"}
+fruits_set={'apple','banana','orange'}
 
 # Check if in set
-if "apple" in fruits_set:
-    print("apple" in fruits_set)
+if 'apple' in fruits_set:
+    print('apple' in fruits_set)
 
 # Add to set
-fruits_set.add("greenbarry")
+fruits_set.add('mango')
 print(fruits_set)
 
 # Remove from set
-fruits_set.remove("greenbarry")
+fruits_set.remove('mango')
 print(fruits_set)
 
 # Add duplicate
-fruits_set.add("apple")
+fruits_set.add('apple')
 print(fruits_set)
 
 # Clear set

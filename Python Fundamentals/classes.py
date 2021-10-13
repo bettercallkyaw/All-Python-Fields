@@ -9,11 +9,11 @@ class User:
         self.age=age
 
     def greeting(self):
-        return f"Hello My name is {self.name} and I am {self.age} year old."
+        return f'hello my name is {self.name}.I am {self.age} year old.'  
 
     def has_birthday(self):
-        self.age+=1
-
+        self.age+=1      
+    
 #Extend class
 class Customer(User):
     def __init__(self,name,email,age):
@@ -23,19 +23,19 @@ class Customer(User):
         self.balance=0
 
     def set_balance(self,balance):
-        self.balance=balance
+        self.balance=balance   
 
     def greeting(self):
-        return f'Hello My name is {self.name} and I am {self.age} year old.My balance is {self.balance}.' 
+        return f'hello my name is {self.name}.I am {self.age} year old.My balance is {self.balance}.'      
 
+user=User('bob smith','bob@gmail.com',22)
+print(type(user))
+print(user.name)
+user.has_birthday()
+print(user.greeting())
 
-bob=User("bob smith","bob@gmail.com",23)
-print(type(bob))
-print(bob.name)
-bob.has_birthday()
-print(bob.greeting())
-
-robet=Customer("robet peter","robet@gmail.com",34)
-print(type(robet))
-robet.set_balance(900)
-print(robet.greeting())
+customer=Customer('william smith','william@gmail.com',25)
+print(type(customer))
+print(customer.name)
+customer.set_balance(999)
+print(customer.greeting())

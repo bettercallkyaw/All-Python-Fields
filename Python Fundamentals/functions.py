@@ -2,9 +2,9 @@
 
 # Create function
 def sayHello(name):
-    print(f"Hello {name}")
+    print(f'hello {name}')
 
-sayHello("bob")
+sayHello('bob smith')
 
 # Return values
 def getTotal(num1,num2):

@@ -16,13 +16,13 @@ VARIABLE RULES:
 
 a=5 # int
 b=5.5 # float
-name="bob" # string
+name='bob' # string
 isMarried=False # bool
 
 print(name)
 
 #mutiple assignment
-(x,y,city,isCool)=(3,4.5,"boston",True)
+(x,y,city,isCool)=(3,4.5,'boston',True)
 print(city)
 
 #basic math

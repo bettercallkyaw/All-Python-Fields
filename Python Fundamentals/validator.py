@@ -1,4 +1,4 @@
-# Example of a custom module to be imported
+# Example of a custom module to be imported with regular expression
 
 import re
 

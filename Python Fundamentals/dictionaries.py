@@ -1,73 +1,68 @@
 # A Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.
 
 # Create dict
-
-person={
-    "fullName":"bob smith",
-    "email":"bob@gmail.com",
-    "city":"boston",
-    "age":23
+person1={
+    'name':'bob smith',
+    'email':'bob@gmail.com',
+    'city':'boston',
+    'age':22
 }
 
-print(type(person),person)
-
-# Use constructor
-person1=dict(fullName="john smith",email="john@yahoo.com",city="london",age=34)
 print(type(person1),person1)
 
+# Use constructor
+person2=dict(name='john doe',email='john@gmail.com',city='london',age=25)
+print(type(person2),person2)
+
 # Get value
-print(person["fullName"])
-print(person1.get("city"))
-print(person1["age"])
+print(person1['name'])
+print(person1.get('email'))
+print(person2['city'])
 
 # Add key/value
-person["job"]="teacher"
-print(person)
-
-# Get dict keys
-print(person.keys())
-
-# Get dict items
-print(person.items())
-
-# Copy dict
-person1=person.copy()
-person1["city"]="berlin"
+person1['job']='developer'
 print(person1)
 
+# Get dict keys
+print(person1.keys())
+
+# Get dict items
+print(person1.items())
+
+# Copy dict
+person2=person1.copy()
+person2['city']='berlin'
+print(person2)
+
 # Remove item
-del(person["job"])
-print(person)
+del(person1['job'])
+print(person1)
 
 #Remove with pop
-person.pop("email")
-print(person)
+person1.pop('email')
+print(person1)
 
 # Clear
-person.clear()
-print(person)
+person1.clear()
+print(person1)
 
 # Get length
-print(len(person1))
+print(len(person2))
 
 # List of dict
 people=[
     {
-        "fullName":"robet Peter",
-         "job":"developer",
-         "hobbies":["sports","movies","guitar"],
-         "email":"robet@gmail.com",
-         "age":23
+        'name':'jack peter',
+        'hobbies':['hiking','movies','sports'],
+        'facebook':'www.facebook.com/profile.php?id=6789'
     },
     {
-        "fullName":"william",
-        "job":"designer",
-        "email":"william@gmail.com",
-        "age":44
+         'name':'jemi jack',
+         'hobbies':['bass guitar','coding','music'],
+         'twitter':'www.twitter.com/@jemi34'
     }
 ]
 
 print(type(people),people)
-print(people[0]["fullName"])
-print(people[0]["hobbies"][1])
-print(people[1]["email"])
+print(people[0]['name'])
+print(people[1]['hobbies'][2])

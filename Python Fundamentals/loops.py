@@ -1,33 +1,32 @@
 # A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
 
-people=["john","bob","robet","william"]
+people=['bob','jack','william','peter']
 
 # Sample for loop
 for person in people:
-    print("current person=> "+person)
+    print(f'current person=>{person}')
 
 # break
 for person in people:
-    if person =="bob":
+    if person =='jack':
         break
-    print("current person=> "+person)
+    print(f'current break person=>{person}')
 
 # continue
 for person in people:
-    if person =="john":
+    if person =='jack':
         continue
-    print("current person=>"+person)
+    print(f'current continue person=>{person}')
 
 # range
 for i in range(len(people)):
-    print(f"range person=>"+people[i])
+    print(f'range person=>{people[i]}')
 
 for i in range(1,10):
-    print(f"range number=>{i}")
+    print(f'number=>{i}')
 
 # While loops execute a set of statements as long as a condition is true.
 count =0
-
 while count<=10:
     print(f'count number=>{count}')
     count+=1
